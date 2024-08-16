@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Highlight Testing Tickets",
+  "version": "1.0",
+  "description": "Highlights tickets with User Stories in 'testing' status.",
+  "permissions": [
+      "activeTab",
+      "scripting",
+      "https://tp.traderevolution.com/*"
+  ],
+  "host_permissions": [
+      "https://tp.traderevolution.com/*"
+  ],
+  "content_scripts": [
+      {
+          "matches": ["https://tp.traderevolution.com/*"],
+          "js": ["content.js"]
+      }
+  ]
+}

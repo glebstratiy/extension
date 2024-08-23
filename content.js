@@ -56,4 +56,4 @@
     }
 
     // Запуск процесса обработки юзер стори с задержкой в 5 секунд
-    setTimeout(processUserStories, 10000``);
+    setTimeout(processUserStories, 10000);

@@ -1,0 +1,24 @@
+{
+  "name": "extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/popup.tsx --bundle --outfile=dist/popup.js --minify --jsx=automatic --platform=browser",
+    "build:content": "esbuild src/content.ts --bundle --outfile=dist/content.js --minify --platform=browser"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.313",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "esbuild": "^0.25.1",
+    "typescript": "^5.8.2"
+  }
+}

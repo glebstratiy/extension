@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Ticket Status Helper",
+    "version": "1.0",
+    "description": "Показывает статус юзер-стори и инфу в pop-up",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": ["https://tp.traderevolution.com/*"],
+    "background": {
+      "service_worker": "dist/content.js"
+    },
+    "action": {
+      "default_popup": "public/index.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://tp.traderevolution.com/*"],
+        "js": ["dist/content.js"]
+      }
+    ]
+  }
+  
